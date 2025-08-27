@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Tailwind CSS and DaisyUI CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="style/style.css" />
+
+    <title>Assignment - 01</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="container mx-auto max-w-screen-xl p-5">
+      <div class="navbar bg-base-100">
+        <!-- Left: Logo -->
+        <div class="navbar-start">
+          <!-- Mobile dropdown menu -->
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <!-- Dropdown menu items -->
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li>
+                <button
+                  class="flex items-center bg-[rgba(65,255,107,0.10)] px-4 py-2 rounded-full"
+                >
+                  <span>10</span>
+                  <img
+                    class="w-[25px] ml-2"
+                    src="./assets/heart.png"
+                    alt="heart"
+                  />
+                </button>
+              </li>
+              <li>
+                <button
+                  class="flex items-center bg-[rgba(65,255,107,0.10)] px-4 py-2 rounded-full"
+                >
+                  <span>10</span>
+                  <img
+                    class="w-[25px] ml-2"
+                    src="./assets/coin.png"
+                    alt="coin"
+                  />
+                </button>
+              </li>
+              <li>
+                <button
+                  class="flex items-center bg-[#00A63E] px-4 py-2 rounded-full text-white"
+                >
+                  <span class="mr-2">9</span>
+                  Copy
+                </button>
+              </li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-xl">
+            <div class="flex items-center space-x-1">
+              <img
+                class="w-[50px]"
+                src="./assets/bangladesh-govt-logo 1.svg"
+                alt="Logo"
+              />
+              <img
+                class="w-[135px]"
+                src="./assets/Emergency Service.svg"
+                alt="Emergency Service"
+              />
+            </div>
+          </a>
+        </div>
+
+        <!-- Center: (optional links for large screens) -->
+        <div class="navbar-center hidden lg:flex">
+          <!-- You can put nav links here if needed -->
+        </div>
+
+        <!-- Right: Action buttons (desktop only) -->
+        <div class="navbar-end space-x-4 hidden lg:flex">
+          <button
+            class="flex items-center bg-[rgba(65,255,107,0.10)] px-6 space-x-3 py-2 rounded-full"
+          >
+            <span>10</span>
+            <img class="w-[30px]" src="./assets/heart.png" alt="heart" />
+          </button>
+          <button
+            class="flex items-center bg-[rgba(65,255,107,0.10)] px-6 space-x-3 py-2 rounded-full"
+          >
+            <span>10</span>
+            <img class="w-[30px]" src="./assets/coin.png" alt="coin" />
+          </button>
+          <button
+            class="flex items-center bg-[#00A63E] px-6 py-2 rounded-full text-white"
+          >
+            <span class="mr-2">9</span>
+            Copy
+          </button>
+        </div>
+      </div>
+    </header>
+
+    
+  </body>
+</html>
