@@ -35,9 +35,15 @@ document.addEventListener("DOMContentLoaded", () => {
     const historyItem = document.createElement("div");
     historyItem.className = "p-3 bg-gray-100 rounded-lg shadow-sm";
     historyItem.innerHTML = `
-            <h4 class="font-semibold text-sm">${service}</h4>
+            <div class = "flex justify-between items-center hover:translate-x-2 transition-all duration-150 ease-in-out">
+            <div>
+              <h4 class="font-semibold text-sm ">${service}</h4>
             <p class="text-xs text-gray-600">${number}</p>
-            <p class="text-xs text-gray-500 mt-1">Called at: ${timeString}</p>
+            </div>
+            <div>
+            <p class="text-xs text-gray-500 mt-1">${timeString}</p>
+            </div>
+            </div>
         `;
     callHistoryList.appendChild(historyItem);
   }
